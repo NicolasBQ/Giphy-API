@@ -1,0 +1,73 @@
+@import './config';
+
+body {
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: $main-font;
+}
+
+
+.main {
+    min-width: 20%;
+    max-width: 80%;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    background: $accent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+
+.input-container {
+    display: flex;
+    // border: 1px solid rgb(153, 51, 255);
+    border-radius: 8px;
+    &_input {
+        width: 100%;
+        height: 2rem;
+        
+        outline: none;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    &_button {
+        background: $accent;
+        border: none;
+        cursor: pointer;
+        padding: 0 0.5rem;
+    }
+}
+
+.gif-container {
+    margin: 1rem 0;
+    &_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.random_button {
+    padding: 0.8rem 1rem;
+    border: none;
+    background: $accent;
+    font-family: $main-font;
+    color: $white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 1);
+
+}
+
+
+
+
